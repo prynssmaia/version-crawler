@@ -1,0 +1,14 @@
+{
+  "name": "version-crawler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:prynssmaia/version-crawler.git",
+  "author": "Prynss <prynss_lp@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
