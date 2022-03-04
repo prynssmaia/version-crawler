@@ -14,6 +14,6 @@
   },
   "scripts": {
     "start": "nodemon src/server.js",
-    "dev": "nodemon src/crawler.js"
+    "dev": "node src/crawler.js"
   }
 }
