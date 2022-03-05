@@ -1,0 +1,38 @@
+/* Colors three */
+:root {
+    --blue10: #4E9DEF;
+    --blue20: #277BC4;
+    --blue30: #1368A8;
+    --blue40: #29276B;
+    --blue50: #1A1949;
+
+    --purple30: #590E77;
+    --purple40: #42096A;
+    --purple50: #2D055C;
+
+    --bg-white: #F2F2F2;
+    --light-blue: #F5FAFD;
+
+    --blue100: #8BAAE5;
+    --blue200: #CFE1F5;
+    --blue300: #6D62DE;
+
+
+    --bg-gradient5: linear-gradient(to bottom, #29276b, #35327f, #413c94, #4e48aa, #5b53c0, #615fcc, #666ad7, #6c76e3, #6f84e5, #7591e6, #7f9ee6, #8baae5);
+    --background10: linear-gradient(to right top, #4e9def, #72a7ef, #8eb2f0, #a5bdf0, #bac9f0, #b7c5f0, #b5c1ef, #b3bdef, #9ea7ed, #8b91ea, #7a7ae5, #6d62de);
+    --rainbow: linear-gradient(to right top, #946dd3, #ab7dda, #c08ee2, #d4a0ea, #e6b3f3, #dcc3fc, #d6d1ff, #d7deff, #c8e7ff, #bdf0ff, #bbf7fb, #c4fcef);
+}
+
+/* ----- Reset ----- */
+* {
+	margin: 0;
+	padding: 0;
+	border-spacing: 0px;
+	box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--blue200);
+}
