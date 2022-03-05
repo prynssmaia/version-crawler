@@ -10,12 +10,18 @@
     --purple40: #42096A;
     --purple50: #2D055C;
 
-    --bg-white: #F2F2F2;
+    --bg-white: #fafafb;
     --light-blue: #F5FAFD;
 
     --blue100: #8BAAE5;
     --blue200: #CFE1F5;
     --blue300: #6D62DE;
+
+    --green10: #98B0A9;
+    --green20: #00C9A7;
+    --green30: #354B45;
+    --blue10: #4ABAFF;
+    --blue20: #0085D3;
 
 
     --bg-gradient5: linear-gradient(to bottom, #29276b, #35327f, #413c94, #4e48aa, #5b53c0, #615fcc, #666ad7, #6c76e3, #6f84e5, #7591e6, #7f9ee6, #8baae5);
@@ -34,5 +40,23 @@
 body {
     height: 100vh;
     width: 100vw;
-    background-color: var(--blue200);
+    background-image: var(--bg-white);
+}
+
+/* ----- Header section ----- */
+.header-content {
+	background-color: #002766;
+	width: 100%;
+	height: 2.5rem;
+
+}
+
+.bottom-header-content {
+	background-color: #004191;
+	height: 1.875rem;
+}
+
+.bottom-header-line {
+	height: 2px;
+	background-image: linear-gradient(to right, #52d0a1, #00b1b0, #008fb9, #006ab1, #004191);
 }
