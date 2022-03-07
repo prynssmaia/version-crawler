@@ -4,7 +4,7 @@ const fs = require('fs');
 (async () => {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
-    await page.goto('http://producao.geomais.com.br/changelog.html');
+    await page.goto('https://geo.bc.sc.gov.br/changelog.html');
     // await page.screenshot({ path: 'example.png' });
 
     const versaoList = await page.evaluate( () => {
