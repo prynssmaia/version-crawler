@@ -3,9 +3,12 @@ const fs = require('fs');
 
 (async () => {
     const browser = await puppeteer.launch();
+
+    const geo = 'https://geo.bc.sc.gov.br/changelog.html'
+
     const page = await browser.newPage();
-    await page.goto('https://geo.bc.sc.gov.br/changelog.html');
-    // await page.screenshot({ path: 'example.png' });
+
+    await page.goto(geo);
 
     const versaoList = await page.evaluate( () => {
 
@@ -20,7 +23,7 @@ const fs = require('fs');
         const versaoSlice = versaoBase.slice(0,6)
         const versao = versaoSlice
 
-        return { versao: versao}
+        return { versao: versao }
 
       })
 
@@ -28,12 +31,12 @@ const fs = require('fs');
 
     })
 
-  // escrevendo os dados em um arquivo local (json)
+  //escrevendo os dados em um arquivo local (json)
   fs.writeFile('versao_data.json', JSON.stringify(versaoList, null, 2), err => {
     if(err) throw new Error('Something went wrong')
 
-    console.log('Well done!')
+    console.log('Well done! Scraped data ')
   })
   
-    await browser.close();
+  await browser.close();
   })();
