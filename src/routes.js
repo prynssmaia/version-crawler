@@ -8,7 +8,7 @@ const views = path.join(__dirname, '/views/')
 
 
 routes.get('/', (req, res) => {
-    res.render('index')
+    res.render(views + 'index')
   })
 
 module.exports = routes
