@@ -3,6 +3,7 @@ const routes = require('./routes')
 const port = 3000
 
 const server = express()
+server.set('view engine', 'ejs')
 server.use(express.urlencoded({ extended: true }))
 server.use(express.json())
 server.use(routes)
