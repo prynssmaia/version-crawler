@@ -65,16 +65,20 @@ section {
 /* ----- Cards styles ----- */
 .cards {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    width: 900px;
+    margin: auto;
 
     padding: 1.25rem 0 1.25rem 0;
 }
 
 #card {
     display: flex;
-    width: 12rem;
+    width: 11rem;
     height: 14rem;
+    margin-top: 1.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
     color: var(--white-pure);
