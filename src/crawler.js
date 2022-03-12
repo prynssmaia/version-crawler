@@ -5,7 +5,7 @@ const fs = require('fs');
   const urls = ['https://google.com','https://youtube.com']
   
   for ( let i = 0; i < urls.length; i++) {
-    const page = urls[i]
+    const url = urls[i]
     const browser = await puppeteer.launch()
     const page = await browser.newPage()
     await page.goto(`${url}`)
@@ -16,7 +16,8 @@ const fs = require('fs');
     
   })();
 
-
+// xPath para o número de versão
+// $x('/html/body/div/div/div[2]/div[2]/a/text()[2]')[0].wholeText
 
 
 
