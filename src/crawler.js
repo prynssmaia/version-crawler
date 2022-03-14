@@ -5,36 +5,52 @@ const fs = require('fs');
   const urls = ['http://producao.geomais.com.br/changelog.html', 'http://demo.geomais.com.br/changelog.html']
   const fullxpath = '/html/body/div/div/div[2]/div[2]/a/text()[2]'
   const seletor = '#root > div > div.ant-col.sc-iJminA.kqnHRJ.ant-col-xs-24.ant-col-lg-10.ant-col-xl-8 > div.public-access > a'
+  const browser = await puppeteer.launch( { headless: true } )
+  const page = await browser.newPage()
 
-  
   for ( let i = 0; i < urls.length; i++) {
     const url = urls[i]
-    const browser = await puppeteer.launch( { headless: false } )
-    const page = await browser.newPage()
-    await page.goto(`${url}`)
-    await page.screenshot({ path: `example${i}.png` });
+    await page.goto(url)
+    const versionBase = await page.$eval('.content h2:nth-of-type(2)', element => element.textContent)
+    const versaoSlice = versionBase.slice(0, 6)
+    const version = versaoSlice
 
-    const versao = await page.evaluate( () => { 
-      const nodeList = document.querySelectorAll('.content')
+    const dateSlice = versionBase.slice(9, 26)
+    const date = dateSlice
 
-      const versionArray = [...nodeList]
-
-      const versaoList = versionArray.map(function(elemento, indice, arrayBase) {
-
-        const versionBase = elemento.querySelector('.content h2:nth-of-type(2)').textContent
-        const versaoSlice = versionBase.slice(0, 6)
-        const version = versaoSlice
-
-        return version
-      })
-
-      return versaoList
-    })
-    console.log(versao)
-
-    await browser.close();
-
+    const result = {version, date}
+    console.log(result)
   }
+  
+  
+  // for ( let i = 0; i < urls.length; i++) {
+  //   const url = urls[i]
+  //   const browser = await puppeteer.launch( { headless: false } )
+  //   const page = await browser.newPage()
+  //   await page.goto(`${url}`)
+  //   await page.screenshot({ path: `example${i}.png` });
+
+  //   const versao = await page.evaluate( () => { 
+  //     const nodeList = document.querySelectorAll('.content')
+
+  //     const versionArray = [...nodeList]
+
+  //     const versaoList = versionArray.map(function(elemento, indice, arrayBase) {
+
+  //       const versionBase = elemento.querySelector('.content h2:nth-of-type(2)').textContent
+  //       const versaoSlice = versionBase.slice(0, 6)
+  //       const version = versaoSlice
+
+  //       return version
+  //     })
+
+  //     return versaoList
+  //   })
+  //   console.log(versao)
+
+  await browser.close();
+
+  // }
     
   })();
   
