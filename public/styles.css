@@ -134,3 +134,22 @@ p {
     font: 700 1rem 'Open Sans', sans-serif;
 }
 
+p {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+p[data-title]:hover::after {
+  content: attr(data-title);
+  position: absolute;
+  top: 25px;
+  left: 45px;
+  border-radius: 2px;
+  padding: 4px;
+  background-color: #000000f0;
+  color: var(--white-pure);
+  box-shadow: 0px 4px 8px var(--shadow);
+  font: 400 0.8rem 'Open Sans', sans-serif;
+}
+
