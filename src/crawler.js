@@ -1,5 +1,6 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
+const res = require('express/lib/response');
 
 (async () => {
   const urls = ['http://producao.geomais.com.br/changelog.html', 'http://demo.geomais.com.br/changelog.html']
@@ -7,6 +8,7 @@ const fs = require('fs');
   const seletor = '#root > div > div.ant-col.sc-iJminA.kqnHRJ.ant-col-xs-24.ant-col-lg-10.ant-col-xl-8 > div.public-access > a'
   const browser = await puppeteer.launch( { headless: true } )
   const page = await browser.newPage()
+  const versionResult = []
 
   for ( let i = 0; i < urls.length; i++) {
     const url = urls[i]
@@ -19,46 +21,16 @@ const fs = require('fs');
     const date = dateSlice
 
     const result = {version, date}
-    console.log(result)
+    versionResult.push(result)
   }
   
-  
-  // for ( let i = 0; i < urls.length; i++) {
-  //   const url = urls[i]
-  //   const browser = await puppeteer.launch( { headless: false } )
-  //   const page = await browser.newPage()
-  //   await page.goto(`${url}`)
-  //   await page.screenshot({ path: `example${i}.png` });
+  //escrevendo os dados em um arquivo local (json)
+  fs.writeFile('versao_data.json', JSON.stringify(versionResult, null, 2), err => {
+    if(err) throw new Error('Something went wrong')
 
-  //   const versao = await page.evaluate( () => { 
-  //     const nodeList = document.querySelectorAll('.content')
-
-  //     const versionArray = [...nodeList]
-
-  //     const versaoList = versionArray.map(function(elemento, indice, arrayBase) {
-
-  //       const versionBase = elemento.querySelector('.content h2:nth-of-type(2)').textContent
-  //       const versaoSlice = versionBase.slice(0, 6)
-  //       const version = versaoSlice
-
-  //       return version
-  //     })
-
-  //     return versaoList
-  //   })
-  //   console.log(versao)
+    console.log('Well done! Scraped data ')
+  })
 
   await browser.close();
-
-  // }
     
-  })();
-  
-  // //escrevendo os dados em um arquivo local (json)
-  // fs.writeFile('versao_data.json', JSON.stringify(versaoList, null, 2), err => {
-  //   if(err) throw new Error('Something went wrong')
-
-  //   console.log('Well done! Scraped data ')
-  // })
-  
-  
+  })();  
