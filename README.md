@@ -15,17 +15,17 @@ Crawler responsável por rastrear o número de versão do SIG Geomais.
 - [X] Salvar dados em um json local
 
 **V 1.2**
-- [ ] Raspar dado - URL
-- [ ] Raspar dado - Nome município
-- [ ] Raspar dado - Brasao municipio
-- [ ] Salvar dados em um json local
+- [x] Raspar dado - URL
+- [x] Raspar dado - Nome município
+- [x] Raspar dado - Brasao municipio
+- [x] Salvar dados em um json local
 
 **V 1.3**
-- [ ] Pesquisar versão de diversos endereços.
-- [ ] Gerar resultado em uma página localhost.
+- [x] Pesquisar versão de diversos endereços.
+- [x] Gerar resultado em uma página localhost.
 
 ## Features
-- [ ] Listar versões em tela
+- [x] Listar versões em tela
 - [ ] Opção para listar em blocos ou lista
 - [ ] Extrair documento para csv, pdf.
 - [ ] Enviar email com as informações.
