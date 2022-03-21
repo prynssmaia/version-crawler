@@ -4,7 +4,7 @@ const res = require('express/lib/response');
 
 (async () => {
   // const urls = ['http://producao.geomais.com.br/changelog.html', 'http://demo.geomais.com.br/changelog.html']
-  const urls = ['https://geo.bc.sc.gov.br//changelog.html', 'http://geo.paranacidade.pr.gov.br//changelog.html']
+  const urls = ['https://geo.bc.sc.gov.br/changelog.html', 'http://geo.paranacidade.pr.gov.br/changelog.html']
   const fullxpath = '/html/body/div/div/div[2]/div[2]/a/text()[2]'
   const seletor = '#root > div > div.ant-col.sc-iJminA.kqnHRJ.ant-col-xs-24.ant-col-lg-10.ant-col-xl-8 > div.public-access > a'
   const browser = await puppeteer.launch( { headless: true } )
@@ -24,6 +24,7 @@ const res = require('express/lib/response');
     const result = {version, date}
     versionResult.push(result)
   }
+  console.log(versionResult)
   
   //escrevendo os dados em um arquivo local (json)
   fs.writeFile('versao_data.json', JSON.stringify(versionResult, null, 2), err => {
