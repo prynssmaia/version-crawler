@@ -6,7 +6,7 @@
 
 
 ## Sobre
-O projeto visa solucionar a necessidade e assim fornecer aos usuários um catálogo contendo o nome dos municípios e versões da aplicação SIG Geomais.
+O projeto visa solucionar a necessidade e assim fornecer aos usuários um catálogo contendo o nome dos municípios e suas respectivas versões da aplicação SIG Geomais.
 Baseado em NodeJS e fundamentos do desenvolvimento web, o crawler cumpre o objetivo de navegar até as aplicações, implantadas nos municípios, e resgatar os dados e aplicá-los em uma interface ao usuário. 
 
 
