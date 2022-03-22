@@ -11,26 +11,20 @@ Baseado em NodeJS e fundamentos do desenvolvimento web, o crawler cumpre o objet
 
 
 
-## To Do
-**V 1.0**
+## To Do List
+🤖 **Puppeteer**
 - [X] Criar servidor
 - [X] Instalar Puppeteer
-- [X] Teste básico Puppeteer printando tela
-- [X] Pesquisar número de versão de uma página.
-- [X] Salvar dados em um json local
+- [X] Acessar uma URL
+- [X] Colher dados de número de versão da aplicação
+- [X] Acessar múltiplas URLs
+- [X] Colher dados de número de versão respectivamente
+- [ ] Logar na aplicação
+- [ ] Colher dados de nome e brasão município
 
-**V 1.2**
-- [x] Raspar dado - URL
-- [x] Raspar dado - Nome município
-- [x] Raspar dado - Brasao municipio
-- [x] Salvar dados em um json local
 
-**V 1.3**
-- [x] Pesquisar versão de diversos endereços.
-- [x] Gerar resultado em uma página localhost.
-
-## Features
-- [x] Listar versões em tela
-- [ ] Opção para listar em blocos ou lista
-- [ ] Extrair documento para csv, pdf.
-- [ ] Enviar email com as informações.
+✨ **Funcionalidades**
+- [X] Exibir brasão, nome e número no formato de cards
+- [ ] Exibir brasão, nome e número no formato de tabela
+- [ ] Opção para escolha no formato de exibição
+- [ ] Opção para impressão do documento
