@@ -1,10 +1,15 @@
 <p align="center">
-    <img width="20%" src="public\logo_crawler.png">
+    <img width="60%" src="public\version_checker_logo.png">
 </p>
-<h1 align="center">Version Checker</h1>
 
-## About
-Crawler responsável por rastrear o número de versão do SIG Geomais.
+---
+
+
+## Sobre
+O projeto visa solucionar a necessidade e assim fornecer aos usuários um catálogo contendo o nome dos municípios e versões da aplicação SIG Geomais.
+Baseado em NodeJS e fundamentos do desenvolvimento web, o crawler cumpre o objetivo de navegar até as aplicações, implantadas nos municípios, e resgatar os dados e aplicá-los em uma interface ao usuário. 
+
+
 
 ## To Do
 **V 1.0**
