@@ -30,12 +30,13 @@
                 <a href="#" target="_blank">
                     <div id="card">
                         <div class="card-img">
-                            <img src="/download.png" alt="Brasão Município">
+                            <img src="<%= county[2].brasao %>" alt="Brasão Município">
                         </div>
                         <div class="card-text">
-                            <h3 class="card-title">Baln. Camboriú</h3>
+                            <!-- Balneário Camboriú -->
+                            <h3 class="card-title"><%= county[2].municipio %></h3>
                             <p class="card-version" data-title="<%= versao_data[0].date %>">
-                                <%= versao_data[0].version %>
+                                <%= versao_data[2].version %>
                             </p>
                         </div>
                     </div>
@@ -43,12 +44,27 @@
                 <a href="#" target="_blank">
                     <div id="card">
                         <div class="card-img">
-                            <img src="/paranacidade.jpg" alt="Brasão Município">
+                            <img src="<%= county[9].brasao %>" alt="Brasão Município">
                         </div>
                         <div class="card-text">
-                            <h3 class="card-title">ParanaCidade</h3>
+                            <!-- Nova Venécia -->
+                            <h3 class="card-title"><%= county[9].municipio %></h3>
                             <p class="card-version" data-title="<%= versao_data[1].date %>">
                                 <%= versao_data[1].version %>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div id="card">
+                        <div class="card-img">
+                            <img src="<%= county[12].brasao %>" alt="Brasão Município">
+                        </div>
+                        <div class="card-text">
+                            <!-- Umuarama -->
+                            <h3 class="card-title"><%= county[12].municipio %></h3>
+                            <p class="card-version" data-title="<%= versao_data[2].date %>">
+                                <%= versao_data[2].version %>
                             </p>
                         </div>
                     </div>
