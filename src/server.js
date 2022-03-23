@@ -2,6 +2,7 @@ const express = require('express')
 const routes = require('./routes')
 const port = 3000
 const versao_data = require('../versao_data.json')
+const county = require('../municipios.json')
 
 const server = express()
 server.set('view engine', 'ejs')
@@ -11,6 +12,7 @@ server.use(express.json())
 server.use(routes)
 
 server.locals.versao_data = versao_data
+server.locals.county = county
 
 server.listen(port, () => console.log(`Rodando em http://localhost:${port}`))
 
