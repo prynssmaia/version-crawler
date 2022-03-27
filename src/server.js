@@ -21,5 +21,5 @@ server.listen(port, () => console.log(`Rodando em http://localhost:${port}`))
 
 schedule.scheduleJob('28 * * * *', function(){
     getVersion()
-    console.log('Task Donw!')
+    console.log('Task Done!')
 });
