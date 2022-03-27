@@ -1,12 +1,10 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
-const res = require('express/lib/response');
 
-(async () => {
-  // const urls = ['http://producao.geomais.com.br/changelog.html', 'http://demo.geomais.com.br/changelog.html']
+async function getVersion() {
+  //const urls = ['http://producao.geomais.com.br/changelog.html',http://demo.geomais.com.br/changelog.html']
   const urls = ['https://geo.bc.sc.gov.br/changelog.html', 'http://201.59.100.253:3080/changelog.html', 'http://187.87.208.107:3390/changelog.html']
-  const fullxpath = '/html/body/div/div/div[2]/div[2]/a/text()[2]'
-  const seletor = '#root > div > div.ant-col.sc-iJminA.kqnHRJ.ant-col-xs-24.ant-col-lg-10.ant-col-xl-8 > div.public-access > a'
+
   const browser = await puppeteer.launch( { headless: true } )
   const page = await browser.newPage()
   const versionResult = []
@@ -21,18 +19,20 @@ const res = require('express/lib/response');
     const dateSlice = versionBase.slice(9, 26)
     const date = dateSlice
 
-    const result = {version, date}
+    const result = {url, version, date}
     versionResult.push(result)
   }
-  console.log(versionResult)
-  
+  console.table(versionResult)
+
   //escrevendo os dados em um arquivo local (json)
   fs.writeFile('versao_data.json', JSON.stringify(versionResult, null, 2), err => {
     if(err) throw new Error('Something went wrong')
 
-    console.log('Well done! Scraped data ')
+    console.log('Well done! Saved data')
   })
 
-  await browser.close();
-    
-  })();  
+await browser.close();
+
+}
+
+module.exports = getVersion
