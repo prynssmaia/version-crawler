@@ -24,7 +24,8 @@ Baseado em NodeJS e fundamentos do desenvolvimento web, o crawler cumpre o objet
 
 
 ✨ **Funcionalidades**
-- [X] Exibir brasão, nome e número no formato de cards
-- [ ] Exibir brasão, nome e número no formato de tabela
-- [ ] Opção para escolha no formato de exibição
+- [X] Agendamento da tarefa de rastrear dados de versões
+- [X] Exibição dos dados no formato de cartões
+- [ ] Exibição dos dados no formato de tabela
 - [ ] Opção para impressão do documento
+- [ ] Nova UI
