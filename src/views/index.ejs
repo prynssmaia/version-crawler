@@ -27,64 +27,21 @@
 
         <section class="page-body">
             <div class="cards">
-                <% for (var i=0; i < versao_data[0].version; i++ ) {%>
-                    <a href="#" target="_blank">
+                <% for (var i=0; i < county.length; i++ ) {%>
+                    <a href="<%= county[i].url %>" target="_blank">
                         <div id="card">
                             <div class="card-img">
-                                <img src="<%= county[0].brasao %>" alt="Brasão Município">
+                                <img src="<%= county[i].brasao %>" alt="Brasão Município de <%= county[i].municipio %>">
                             </div>
                             <div class="card-text">
-                                <h3 class="card-title"><%= county[0].municipio %></h3>
-                                <p class="card-version" data-title="<%= versao_data[0].date %>">
-                                    <%= versao_data[0].version %>
+                                <h3 class="card-title"><%= county[i].municipio %></h3>
+                                <p class="card-version" data-title="<%= versao_data[i].date %>">
+                                    <%= versao_data[i].version %>
                                 </p>
                             </div>
                         </div>
-                    </a>                            
+                    </a>
                   <% } %>
-                <!-- <a href="#" target="_blank">
-                    <div id="card">
-                        <div class="card-img">
-                            <img src="<%= county[2].brasao %>" alt="Brasão Município">
-                        </div>
-                        <div class="card-text">
-                            <!-- Balneário Camboriú -->
-                            <h3 class="card-title"><%= county[2].municipio %></h3>
-                            <p class="card-version" data-title="<%= versao_data[0].date %>">
-                                <%= versao_data[0].version %>
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" target="_blank">
-                    <div id="card">
-                        <div class="card-img">
-                            <img src="<%= county[9].brasao %>" alt="Brasão Município">
-                        </div>
-                        <div class="card-text">
-                            <!-- Nova Venécia -->
-                            <h3 class="card-title"><%= county[9].municipio %></h3>
-                            <p class="card-version" data-title="<%= versao_data[1].date %>">
-                                <%= versao_data[1].version %>
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" target="_blank">
-                    <div id="card">
-                        <div class="card-img">
-                            <img src="<%= county[12].brasao %>" alt="Brasão Município">
-                        </div>
-                        <div class="card-text">
-                            <!-- Umuarama -->
-                            <h3 class="card-title"><%= county[12].municipio %></h3>
-                            <p class="card-version" data-title="<%= versao_data[2].date %>">
-                                <%= versao_data[2].version %>
-                            </p>
-                        </div>
-                    </div>
-                </a> -->
-                
             </div>
         </section>
     </div>
