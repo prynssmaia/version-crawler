@@ -27,7 +27,22 @@
 
         <section class="page-body">
             <div class="cards">
-                <a href="#" target="_blank">
+                <% for (var i=0; i < versao_data[0].version; i++ ) {%>
+                    <a href="#" target="_blank">
+                        <div id="card">
+                            <div class="card-img">
+                                <img src="<%= county[0].brasao %>" alt="Brasão Município">
+                            </div>
+                            <div class="card-text">
+                                <h3 class="card-title"><%= county[0].municipio %></h3>
+                                <p class="card-version" data-title="<%= versao_data[0].date %>">
+                                    <%= versao_data[0].version %>
+                                </p>
+                            </div>
+                        </div>
+                    </a>                            
+                  <% } %>
+                <!-- <a href="#" target="_blank">
                     <div id="card">
                         <div class="card-img">
                             <img src="<%= county[2].brasao %>" alt="Brasão Município">
@@ -68,7 +83,7 @@
                             </p>
                         </div>
                     </div>
-                </a>
+                </a> -->
                 
             </div>
         </section>
