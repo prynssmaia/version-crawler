@@ -44,6 +44,26 @@ section {
     background-color: var(--white-pure);
 }
 
+/* ----- Sidebar styles ----- */
+.sidebar {
+    width: 72px;
+    height: 100vh;
+    background-color: #52d0a1;
+    position: fixed;
+}
+
+.logo-content {
+    background-color: var(--white-pure);
+    height: 90px;
+}
+
+.logo {
+    height: 54px;
+    width: 49px;
+    display: flex;
+}
+
+
 /* ----- Header styles ----- */
 .header-content {
 	background-color: var(--blue-dark);
