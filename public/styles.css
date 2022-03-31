@@ -36,7 +36,6 @@ li {
 
 body {
     height: 100vh;
-    width: 100vw;
     background-image: var(--white-bg);
 }
 
@@ -44,7 +43,6 @@ section {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 60rem;
     background-color: var(--white-pure);
 }
 
@@ -102,7 +100,7 @@ section {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 900px;
+    width: 1200px;
     margin: auto;
 
     padding: 1.25rem 0 1.25rem 0;
