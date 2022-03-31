@@ -3,16 +3,16 @@
     --white-pure: #FFF;
     --white-bg: #FAFAFB;
 
-    --blue-dark: #002766;
-    --blue-mid: #004191;
-    --blue-light: #F5FAFD;
+    --green10: #52D0A1;
+    --green20: #00B1B0;
+    --green30: #009180;
 
     --gray-text: #4a4a4a;
     --gray-border:#F0F0F0;
 
     --shadow: #26262633;
 
-    --green-blue: linear-gradient(to right, #52d0a1, #00b1b0, #008fb9, #006ab1, #004191);
+    --green-gradient: linear-gradient(141.88deg, #52D0A1 19.55%, #00B1B0 90.43%);
 }
 
 /* ----- Reset ----- */
@@ -26,6 +26,10 @@
 a {
     text-decoration: none;
     cursor: pointer;
+}
+
+li {
+    list-style: none;
 }
 /* ----- Reset ----- */
 
@@ -46,42 +50,51 @@ section {
 
 /* ----- Sidebar styles ----- */
 .sidebar {
-    width: 72px;
+    width: 4.5rem;
     height: 100vh;
-    background-color: #52d0a1;
+    background-image: var(--green-gradient);
     position: fixed;
 }
 
 .logo-content {
-    background-color: var(--white-pure);
-    height: 90px;
-}
-
-.logo {
-    height: 54px;
-    width: 49px;
+    height: 5.625rem;
     display: flex;
 }
 
-
-/* ----- Header styles ----- */
-.header-content {
-	background-color: var(--blue-dark);
-	width: 100%;
-	height: 2.5rem;
-
+.logo {
+    height: 3.375rem;
+    width: 3.063rem;
 }
 
-.bottom-header-content {
-	background-color: var(--blue-mid);
-	height: 1.875rem;
+.icon {    
+    height: 2rem;
+    width: 2rem;
 }
 
-.bottom-header-line {
-	height: 2px;
-	background-image: var(--green-blue);
+.icon-list:hover {
+    transform: scale(1.2);
+    transition: .5s;
+  }
+.icon-list:after {
+    width: 0%;
 }
-/* ----- Header styles ----- */
+
+.center {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.about {
+    position: absolute;
+    bottom: 0;
+    left: 1.25rem;
+}
+
+.menu-list ul li {
+    margin: 1.75rem 0 1.75rem 0;    
+}
+/* ----- Sidebar styles ----- */
 
 /* ----- Cards styles ----- */
 .cards {
@@ -135,7 +148,7 @@ section {
 }
 
 .card, p:hover {
-    color: var(--blue-mid);
+    color: var(--green30);
 
 }
 
