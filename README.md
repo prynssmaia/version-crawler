@@ -1,17 +1,18 @@
 <p align="center">
-    <img width="60%" src="public\version_checker_logo.png">
+    <img width="60%" src="public\logo\version_checker_logo.png">
 </p>
 
 ---
 
 
-## Sobre
+## 💻 Sobre
+
 O projeto visa solucionar a necessidade e assim fornecer aos usuários um catálogo contendo o nome dos municípios e suas respectivas versões da aplicação SIG Geomais.
 Baseado em NodeJS e fundamentos do desenvolvimento web, o crawler cumpre o objetivo de navegar até as aplicações, implantadas nos municípios, e resgatar os dados e aplicá-los em uma interface ao usuário. 
 
 
 
-## To Do List
+## :memo: To Do List
 🤖 **Puppeteer**
 - [X] Criar servidor
 - [X] Instalar Puppeteer
@@ -29,3 +30,9 @@ Baseado em NodeJS e fundamentos do desenvolvimento web, o crawler cumpre o objet
 - [ ] Exibição dos dados no formato de tabela
 - [ ] Opção para impressão do documento
 - [ ] Nova UI
+
+---
+
+<p align="center">
+  <img src="https://img.shields.io/static/v1?label=313&message=Project&color=000000&labelColor=00B1B0" alt="313 Project" />
+</p>
