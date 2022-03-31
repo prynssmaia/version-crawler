@@ -29,7 +29,7 @@ Baseado em NodeJS e fundamentos do desenvolvimento web, o crawler cumpre o objet
 - [X] Exibição dos dados no formato de cartões
 - [ ] Exibição dos dados no formato de tabela
 - [ ] Opção para impressão do documento
-- [ ] Nova UI
+- [X] Nova UI
 
 ---
 
