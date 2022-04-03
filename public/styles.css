@@ -23,9 +23,10 @@
 	box-sizing: border-box;
 }
 
-a {
+a, a:visited {
     text-decoration: none;
     cursor: pointer;
+    color:var(--gray-text)
 }
 
 li {
@@ -87,6 +88,7 @@ section {
     position: absolute;
     bottom: 0;
     left: 1.25rem;
+    cursor: pointer;
 }
 
 .menu-list ul li {
@@ -145,9 +147,12 @@ section {
     color: var(--gray-text);
 }
 
-.card, p:hover {
+.card, .card-version:hover {
     color: var(--green30);
+}
 
+.hover:hover {
+    color: var(--green30);
 }
 
 .card-title {
@@ -192,3 +197,99 @@ p[data-title]:hover::after {
   font: 400 0.8rem 'Open Sans', sans-serif;
 }
 
+
+/* ----- Modal styles ----- */
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.02);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    width: 21.875rem;
+    height: 25rem;
+    background: var(--white-pure);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px var(--shadow);
+    padding: 0px 32px 8px 32px;
+    
+    display: grid;
+    grid-template-columns: column;
+    position: relative;
+}
+
+.modal-container.show {
+    display: flex;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.show .modal {
+    animation: modal .3s;
+}
+
+.close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.logo-full {
+    width: 160px;
+    height: 57px;
+}
+
+.modal-body {
+    height: 220px;
+}
+
+.modal-body p {
+    font: 200 1.125rem 'Mulish', sans-serif;
+    line-height: 22px;
+    color: var(--gray-text);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social img {
+    width: 18px;
+}
+
+footer .social a {
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    font: 300 1rem 'Open Sans', sans-serif;
+    line-height: 18px;
+    margin: 0 0 0 6px;
+}    
+
+
+
+/* ----- Modal styles ----- */

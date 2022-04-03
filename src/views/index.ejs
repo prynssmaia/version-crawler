@@ -26,12 +26,13 @@
 
             <div class="menu-list">
                 <ul class="nav">
+                    <!--
                     <li class="icon-list">
                         <a href="">
                             <img class="icon center" src="/icons/block_white.svg" alt="Card view icon">
                         </a>
                     </li>
-                    <!-- <li class="icon-list">
+                    <li class="icon-list">
                         <a href="">
                             <img class="icon center" src="/icons/list_white.svg" alt="List view icon">
                         </a>
@@ -39,9 +40,7 @@
                 </ul>
                 <ul class="about">
                     <li class="icon-list">
-                        <a href="">
-                            <img class="icon center" src="/icons/about_white.svg" alt="" class="icon center">
-                        </a>
+                        <img class="icon center about-icon" src="/icons/about_white.svg" alt="Questoin mark icon">
                     </li>
                 </ul>
             </div>
@@ -66,7 +65,50 @@
                   <% } %>
             </div>
         </section>
+        <div id="modalabout" class="modal-container">
+            <div class="modal">
+                <img  class= "close" src="/icons/close.svg" alt="">
+                <div class="logo-full center">
+                    <img src="/logo/version_checker_logo.png" alt="">
+                </div>
+                <div class="modal-body">
+                    <p>O projeto visa solucionar a necessidade e assim fornecer aos usuários um catálogo contendo o nome dos municípios e suas respectivas versões.<br>
+                       O Version Checker utiliza a biblioteca Puppeter para navegar e obter o número das versões implantados do SIG Geomais.</p>
+                </div>
+                <footer>
+                    <div class="social">
+                        <a href="https://github.com/prynssmaia" target="_blank">
+                            <img src="/icons/github.svg" alt="">
+                            <p class="hover">prynssmaia</p>
+                        </a>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.instagram.com/prynssmaia/" target="_blank">
+                            <img src="/icons/instagram.svg" alt="">
+                            <p class="hover">prynssmaia</p>
+                        </a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+
     </div>
 </body>
+
+<script>
+    function startModal(modalID) {
+            const modal = document.getElementById(modalID)
+            modal.classList.add('show')
+            modal.addEventListener('click', (e) => {
+                if(e.target.id == modalID || 'close'){
+                    modal.classList.remove('show')
+                }
+            })
+        }
+
+    const modalAbout = document.querySelector('.about-icon')
+    modalAbout.addEventListener('click', () => {startModal('modalabout')})
+</script>
 
 </html>
