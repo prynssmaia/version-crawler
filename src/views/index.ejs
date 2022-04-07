@@ -1,175 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Version Crawler</title>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Version Checker</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  </head>
-  <body>
+    <link rel="shortcut icon" href="/logo/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/logo/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
     <div class="global">
 
-        <conteiner class="header">
-            <div class="header-content"></div>
-            <div class="bottom-header-content"></div>
-            <div class="bottom-header-line"></div>
-        </conteiner> 
+        <div class="sidebar">
+            <div class="logo-content">
+                <img class="logo center" src="/logo/vc_logo_white.svg" alt="Version Checker logo inspired by NodeJS colors and format. In the center, in white, is the symbol of the black widow representing a crawling bot.">
+            </div>
+
+            <div class="menu-list">
+                <ul class="nav">
+                    <!--
+                    <li class="icon-list">
+                        <a href="">
+                            <img class="icon center" src="/icons/block_white.svg" alt="Card view icon">
+                        </a>
+                    </li>
+                    <li class="icon-list">
+                        <a href="">
+                            <img class="icon center" src="/icons/list_white.svg" alt="List view icon">
+                        </a>
+                    </li> -->
+                </ul>
+                <ul class="about">
+                    <li class="icon-list">
+                        <img class="icon center about-icon" src="/icons/about_white.svg" alt="Questoin mark icon">
+                    </li>
+                </ul>
+            </div>
+        </div>
 
         <section class="page-body">
             <div class="cards">
-                <a href="http://geo.alfredochaves.es.gov.br/" target="_blank">
-                    <div id="card">
-                        <div class="card-img">
-                            <img src="/download.png" alt="Brasão Município">
+                <% for (var i=0; i < county.length; i++ ) {%>
+                    <a href="<%= county[i].url %>" target="_blank">
+                        <div id="card">
+                            <div class="card-img">
+                                <img src="<%= county[i].brasao %>" alt="Brasão Município de <%= county[i].municipio %>">
+                            </div>
+                            <div class="card-text">
+                                <h3 class="card-title"><%= county[i].municipio %></h3>
+                                <p class="card-version" data-title="<%= versao_data[i].date %>">
+                                    <%= versao_data[i].version %>
+                                </p>
+                            </div>
                         </div>
-                        <div class="card-text">
-                            <h3 class="card-title">Alfredo Chaves</h3>
-                            <p class="card-version">V 1.39.0</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="" target="_blank">
-                    <div id="card">
-                        <div class="card-img">
-                            <img src="/download.png" alt="Brasão Município">
-                        </div>
-                        <div class="card-text">
-                            <h3 class="card-title">Arapongas</h3>
-                            <p class="card-version">V 1.39.0</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="" target="_blank">
-                    <div id="card">
-                        <div class="card-img">
-                            <img src="/download.png" alt="Brasão Município">
-                        </div>
-                        <div class="card-text">
-                            <h3 class="card-title">Baln. Camboriú</h3>
-                            <p class="card-version"><%= versao_data.versao %></p>
-                        </div>
-                    </div>
-                </a>
-                <a href="" target="_blank">
-                    <div id="card">
-                        <div class="card-img">
-                            <img src="/download.png" alt="Brasão Município">
-                        </div>
-                        <div class="card-text">
-                            <h3 class="card-title">Biguaçu</h3>
-                            <p class="card-version">V 1.39.0</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="" target="_blank">
-                    <div id="card">
-                        <div class="card-img">
-                            <img src="/download.png" alt="Brasão Município">
-                        </div>
-                        <div class="card-text">
-                            <h3 class="card-title">Camaçari</h3>
-                            <p class="card-version">x.x</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="" target="_blank">
-                    <div id="card">
-                        <div class="card-img">
-                            <img src="/download.png" alt="Brasão Município">
-                        </div>
-                        <div class="card-text">
-                            <h3 class="card-title">Ibirama</h3>
-                            <p class="card-version">x.x</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="" target="_blank">
-                    <div id="card">
-                        <div class="card-img">
-                            <img src="/download.png" alt="Brasão Município">
-                        </div>
-                        <div class="card-text">
-                            <h3 class="card-title">Itapema</h3>
-                            <p class="card-version">x.x</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="" target="_blank">
-                    <div id="card">
-                        <div class="card-img">
-                            <img src="/download.png" alt="Brasão Município">
-                        </div>
-                        <div class="card-text">
-                            <h3 class="card-title">Jacareí</h3>
-                            <p class="card-version">x.x</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="" target="_blank">
-                    <div id="card">
-                        <div class="card-img">
-                            <img src="/download.png" alt="Brasão Município">
-                        </div>
-                        <div class="card-text">
-                            <h3 class="card-title">Lajeado</h3>
-                            <p class="card-version">1.43.2</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="" target="_blank">
-                    <div id="card">
-                        <div class="card-img">
-                            <img src="/download.png" alt="Brasão Município">
-                        </div>
-                        <div class="card-text">
-                            <h3 class="card-title">Navegantes</h3>
-                            <p class="card-version">x.x</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="" target="_blank">
-                    <div id="card">
-                        <div class="card-img">
-                            <img src="/download.png" alt="Brasão Município">
-                        </div>
-                        <div class="card-text">
-                            <h3 class="card-title">Santo Ângelo</h3>
-                            <p class="card-version">x.x</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="" target="_blank">
-                    <div id="card">
-                        <div class="card-img">
-                            <img src="/download.png" alt="Brasão Município">
-                        </div>
-                        <div class="card-text">
-                            <h3 class="card-title">Timbó</h3>
-                            <p class="card-version">x.x</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="" target="_blank">
-                    <div id="card">
-                        <div class="card-img">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Bras%C3%A3o_de_Umuarama_-_PR.svg" alt="Brasão Município">
-                        </div>
-                        <div class="card-text">
-                            <h3 class="card-title">Umuarama</h3>
-                            <p class="card-version">x.x</p>
-                        </div>
-                    </div>
-                </a>
+                    </a>
+                  <% } %>
             </div>
         </section>
+        <div id="modalabout" class="modal-container">
+            <div class="modal">
+                <img  class= "close" src="/icons/close.svg" alt="">
+                <div class="logo-full center">
+                    <img src="/logo/version_checker_logo.png" alt="">
+                </div>
+                <div class="modal-body">
+                    <p>O projeto visa solucionar a necessidade e assim fornecer aos usuários um catálogo contendo o nome dos municípios e suas respectivas versões.<br>
+                       O Version Checker utiliza a biblioteca Puppeter para navegar e obter o número das versões implantados do SIG Geomais.</p>
+                </div>
+                <footer>
+                    <div class="social">
+                        <a href="https://github.com/prynssmaia" target="_blank">
+                            <img src="/icons/github.svg" alt="">
+                            <p class="hover">prynssmaia</p>
+                        </a>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.instagram.com/prynssmaia/" target="_blank">
+                            <img src="/icons/instagram.svg" alt="">
+                            <p class="hover">prynssmaia</p>
+                        </a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+
     </div>
-  </body>
+</body>
+
+<script>
+    function startModal(modalID) {
+            const modal = document.getElementById(modalID)
+            modal.classList.add('show')
+            modal.addEventListener('click', (e) => {
+                if(e.target.id == modalID || 'close'){
+                    modal.classList.remove('show')
+                }
+            })
+        }
+
+    const modalAbout = document.querySelector('.about-icon')
+    modalAbout.addEventListener('click', () => {startModal('modalabout')})
+</script>
+
 </html>

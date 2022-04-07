@@ -1,3 +1,67 @@
-{
-  "versao": "1.43.2"
-}
+[
+  {
+    "url": "http://geo.alfredochaves.es.gov.br/changelog.html",
+    "version": "1.43.3",
+    "date": "15/03/2022"
+  },
+  {
+    "url": "https://geo.arapongas.pr.gov.br/changelog.html",
+    "version": "1.37.1",
+    "date": "21/01/2022"
+  },
+  {
+    "url": "https://geo.bc.sc.gov.br/changelog.html",
+    "version": "1.44.0",
+    "date": "25/03/2022"
+  },
+  {
+    "url": "http://geo.bigua.sc.gov.br/changelog.html",
+    "version": "1.44.0",
+    "date": "25/03/2022"
+  },
+  {
+    "url": "http://geomais.camacari.ba.gov.br/changelog.html",
+    "version": "1.44.0",
+    "date": "25/03/2022"
+  },
+  {
+    "url": "http://geo.ibirama.sc.gov.br:8082/changelog.html",
+    "version": "1.44.0",
+    "date": "25/03/2022"
+  },
+  {
+    "url": "http://geo.itapema.sc.gov.br:8091/changelog.html",
+    "version": "1.44.0",
+    "date": "25/03/2022"
+  },
+  {
+    "url": "http://162.214.203.123:8081/changelog.html",
+    "version": "1.42.0",
+    "date": "03/03/2022"
+  },
+  {
+    "url": "http://geo.navegantes.sc.gov.br/changelog.html",
+    "version": "1.43.3",
+    "date": "15/03/2022"
+  },
+  {
+    "url": "http://201.59.100.253:3080/changelog.html",
+    "version": "1.43.2",
+    "date": "11/03/2022"
+  },
+  {
+    "url": "http://177.85.24.243:25480/changelog.html",
+    "version": "1.43.3",
+    "date": "15/03/2022"
+  },
+  {
+    "url": "https://geo.timbo.sc.gov.br/changelog.html",
+    "version": "1.43.3",
+    "date": "15/03/2022"
+  },
+  {
+    "url": "http://187.87.208.107:3390/changelog.html",
+    "version": "1.38.0",
+    "date": "28/01/2022"
+  }
+]
