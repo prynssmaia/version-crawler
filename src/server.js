@@ -19,7 +19,8 @@ server.locals.county = county
 
 server.listen(port, () => console.log(`Rodando em http://localhost:${port}`))
 
-schedule.scheduleJob('* * 23 * *', function(){
+//Run getVersion at 3:13AM
+schedule.scheduleJob('13 3 * * *', function(){
     getVersion()
     console.log('Task Done!')
 });
