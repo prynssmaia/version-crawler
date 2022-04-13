@@ -13,8 +13,10 @@ async function getVersion() {
     'http://geo.ibirama.sc.gov.br:8082/changelog.html',
     'http://geo.itapema.sc.gov.br:8091/changelog.html',
     'http://162.214.203.123:8081/changelog.html',
+    'http://177.33.186.184:8080/changelog.html',
     'http://geo.navegantes.sc.gov.br/changelog.html',
     'http://201.59.100.253:3080/changelog.html',
+    'http://geo.paranacidade.pr.gov.br/changelog.html',
     'http://177.85.24.243:25480/changelog.html',
     'https://geo.timbo.sc.gov.br/changelog.html',
     'http://187.87.208.107:3390/changelog.html'
@@ -49,5 +51,5 @@ async function getVersion() {
 await browser.close();
 
 }
-
-module.exports = getVersion
+getVersion()
+//module.exports = getVersion

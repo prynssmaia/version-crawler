@@ -40,6 +40,11 @@
       "brasao": "https://educajacarei.com.br/wp-content/uploads/2021/04/Sem-titulo-1024x972.png"
   },
   {
+    "municipio": "Jaraguá do Sul",
+    "url": "http://177.33.186.184:8080/changelog.html",
+    "brasao": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Brasao_JaraguadoSul_SantaCatarina_Brasil.svg/150px-Brasao_JaraguadoSul_SantaCatarina_Brasil.svg.png"
+  },
+  {
       "municipio": "Navegantes",
       "url": "http://geo.navegantes.sc.gov.br/changelog.html",
       "brasao": "https://upload.wikimedia.org/wikipedia/commons/3/36/Brasao_navegantes.jpg"
@@ -48,6 +53,11 @@
       "municipio": "Nova Venécia",
       "url": "http://201.59.100.253:3080/changelog.html",
       "brasao": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Bras%C3%A3o_de_armas_de_Nova_Ven%C3%A9cia.png/800px-Bras%C3%A3o_de_armas_de_Nova_Ven%C3%A9cia.png"
+  },
+  {
+    "municipio": "ParanaCidade",
+    "url": "http://geo.paranacidade.pr.gov.br/changelog.html",
+    "brasao": "https://paranaoeste.com.br/images/noticias/15985/a9eb56d5e29e4e9c353cd0b8c322ac4e.jpeg"
   },
   {
       "municipio": "Santo Ângelo",
