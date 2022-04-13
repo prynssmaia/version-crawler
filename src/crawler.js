@@ -1,33 +1,16 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
+const counties = require('../municipios.json')
 
 async function getVersion() {
-  //const urls = ['http://producao.geomais.com.br/changelog.html','http://demo.geomais.com.br']  
-  //const urls = ['https://geo.bc.sc.gov.br/changelog.html', 'http://201.59.100.253:3080/changelog.html', 'http://187.87.208.107:3390/changelog.html']
-  const urls = [
-    'http://geo.alfredochaves.es.gov.br/changelog.html',
-    'https://geo.arapongas.pr.gov.br/changelog.html',
-    'https://geo.bc.sc.gov.br/changelog.html',
-    'http://geo.bigua.sc.gov.br/changelog.html',
-    'http://geomais.camacari.ba.gov.br/changelog.html',
-    'http://geo.ibirama.sc.gov.br:8082/changelog.html',
-    'http://geo.itapema.sc.gov.br:8091/changelog.html',
-    'http://162.214.203.123:8081/changelog.html',
-    'http://177.33.186.184:8080/changelog.html',
-    'http://geo.navegantes.sc.gov.br/changelog.html',
-    'http://201.59.100.253:3080/changelog.html',
-    'http://geo.paranacidade.pr.gov.br/changelog.html',
-    'http://177.85.24.243:25480/changelog.html',
-    'https://geo.timbo.sc.gov.br/changelog.html',
-    'http://187.87.208.107:3390/changelog.html'
-  ]
-
   const browser = await puppeteer.launch( { headless: true } )
   const page = await browser.newPage()
   const versionResult = []
 
-  for ( let i = 0; i < urls.length; i++) {
-    const url = urls[i]
+  for ( let i = 0; i < counties.length; i++) {
+    const county = counties[i]
+    const url = county.url
+    console.log('== Analisando versão do município de', county.municipio)
     await page.goto(url)
     const versionBase = await page.$eval('.content h2:nth-of-type(2)', element => element.textContent)
     const versaoSlice = versionBase.slice(0, 6)
@@ -51,5 +34,5 @@ async function getVersion() {
 await browser.close();
 
 }
-getVersion()
-//module.exports = getVersion
+//getVersion()
+module.exports = getVersion
