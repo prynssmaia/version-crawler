@@ -2,76 +2,76 @@
   {
     "municipio": "Alfredo Chaves",
     "url": "http://geo.alfredochaves.es.gov.br/changelog.html",
-    "brasao": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Brasao-alfredochaves.png"
+    "brasao": "http://geo.alfredochaves.es.gov.br/rest/coleta/logo/160"
   },
   {
       "municipio": "Arapongas",
       "url": "https://geo.arapongas.pr.gov.br/changelog.html",
-      "brasao": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Bras%C3%A3o_de_Arapongas.jpg/542px-Bras%C3%A3o_de_Arapongas.jpg"
+      "brasao": "https://geo.arapongas.pr.gov.br/rest/coleta/logo/166"
   },
   {
       "municipio": "Balneário Camboriú",
       "url": "https://geo.bc.sc.gov.br/changelog.html",
-      "brasao": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Bras%C3%A3o_de_Balne%C3%A1rio_Cambori%C3%BA_-_SC.svg/563px-Bras%C3%A3o_de_Balne%C3%A1rio_Cambori%C3%BA_-_SC.svg.png"
+      "brasao": "https://geo.bc.sc.gov.br/rest/coleta/logo/151"
   },
   {
       "municipio": "Biguaçu",
       "url": "http://geo.bigua.sc.gov.br/changelog.html",
-      "brasao": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Brasao_Biguacu_SantaCatarina_Brasil.svg/498px-Brasao_Biguacu_SantaCatarina_Brasil.svg.png"
+      "brasao": "http://geo.bigua.sc.gov.br/rest/coleta/logo/161"
   },
   {
       "municipio": "Camaçari",
       "url": "http://geomais.camacari.ba.gov.br/changelog.html",
-      "brasao": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Bras%C3%A3o_Cama%C3%A7ari-BA.svg/283px-Bras%C3%A3o_Cama%C3%A7ari-BA.svg.png"
+      "brasao": "http://geomais.camacari.ba.gov.br/rest/coleta/logo/127"
   },
   {
       "municipio": "Ibirama",
       "url": "http://geo.ibirama.sc.gov.br:8082/changelog.html",
-      "brasao": "https://www.ibirama.sc.gov.br/img/conteudo/images/Bras%c3%a3o-Ibirama.jpg"
+      "brasao": "http://geo.ibirama.sc.gov.br:8082/rest/coleta/logo/126"
   },
   {
       "municipio": "Itapema",
       "url": "http://geo.itapema.sc.gov.br:8091/changelog.html",
-      "brasao": "https://upload.wikimedia.org/wikipedia/commons/1/19/Brasao_Itapema_SantaCatarina_Brasil.jpg" 
+      "brasao": "http://geo.itapema.sc.gov.br:8091/rest/coleta/logo/135" 
   },
   {
       "municipio": "Jacareí",
       "url": "http://162.214.203.123:8081/changelog.html",
-      "brasao": "https://educajacarei.com.br/wp-content/uploads/2021/04/Sem-titulo-1024x972.png"
+      "brasao": "http://162.214.203.123:8081/rest/coleta/logo/7"
   },
   {
     "municipio": "Jaraguá do Sul",
     "url": "http://177.33.186.184:8080/changelog.html",
-    "brasao": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Brasao_JaraguadoSul_SantaCatarina_Brasil.svg/150px-Brasao_JaraguadoSul_SantaCatarina_Brasil.svg.png"
+    "brasao": "http://177.33.186.184:8080/rest/coleta/logo/181"
   },
   {
       "municipio": "Navegantes",
       "url": "http://geo.navegantes.sc.gov.br/changelog.html",
-      "brasao": "https://upload.wikimedia.org/wikipedia/commons/3/36/Brasao_navegantes.jpg"
+      "brasao": "http://geo.navegantes.sc.gov.br/rest/coleta/logo/110"
   },
   {
       "municipio": "Nova Venécia",
       "url": "http://201.59.100.253:3080/changelog.html",
-      "brasao": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Bras%C3%A3o_de_armas_de_Nova_Ven%C3%A9cia.png/800px-Bras%C3%A3o_de_armas_de_Nova_Ven%C3%A9cia.png"
+      "brasao": "http://201.59.100.253:3080/rest/coleta/logo/161"
   },
   {
     "municipio": "ParanaCidade",
     "url": "http://geo.paranacidade.pr.gov.br/changelog.html",
-    "brasao": "https://paranaoeste.com.br/images/noticias/15985/a9eb56d5e29e4e9c353cd0b8c322ac4e.jpeg"
+    "brasao": "http://geo.paranacidade.pr.gov.br/rest/coleta/logo/300"
   },
   {
       "municipio": "Santo Ângelo",
       "url": "http://177.85.24.243:25480/changelog.html",
-      "brasao": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Brasao_Santo_Angelo.png"
+      "brasao": "http://177.85.24.243:25480/rest/coleta/logo/119"
   },
   {
       "municipio": "Timbó",
       "url": "https://geo.timbo.sc.gov.br/changelog.html",
-      "brasao": "https://upload.wikimedia.org/wikipedia/commons/6/67/Bras%C3%A3o_timbo_sc.jpg"
+      "brasao": "https://geo.timbo.sc.gov.br/rest/coleta/logo/96"
   },
   {
       "municipio": "Umuarama",
       "url": "http://187.87.208.107:3390/changelog.html",
-      "brasao": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Bras%C3%A3o_de_Umuarama_-_PR.svg/609px-Bras%C3%A3o_de_Umuarama_-_PR.svg.png"
+      "brasao": "http://187.87.208.107:3390/rest/coleta/logo/156"
   }
 ]
