@@ -11,6 +11,7 @@
     --gray-border:#F0F0F0;
 
     --shadow: #26262633;
+    --shadow-green: #10eab742;
 
     --green-gradient: linear-gradient(141.88deg, #52D0A1 19.55%, #00B1B0 90.43%);
 }
@@ -123,12 +124,13 @@ section {
     opacity: 0.9;
     border: 0.063rem solid var(--grey-border);
     box-sizing: border-box;
-    box-shadow: 0px 4px 8px var(--shadow);
+    box-shadow: 0px 2px 8px var(--shadow);
     border-radius: 0.5rem;
 }
 
 #card:hover{
-    box-shadow: 0px 4px 12px var(--shadow);
+    box-shadow: 0px 2px 8px var(--shadow-green);
+    border: .2px solid #52d0a28f;
     transition: all 0.2s ease-out;
 }
 
