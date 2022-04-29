@@ -9,7 +9,7 @@ async function getVersion() {
 
   for ( let i = 0; i < counties.length; i++) {
     const county = counties[i]
-    const url = county.url
+    const url = county.url + `${'/changelog.html'}`
     console.log('== Analisando versão do município de', county.municipio)
     await page.goto(url)
     const versionBase = await page.$eval('.content h2:nth-of-type(2)', element => element.textContent)

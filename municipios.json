@@ -1,77 +1,77 @@
 [
   {
     "municipio": "Alfredo Chaves",
-    "url": "http://geo.alfredochaves.es.gov.br/changelog.html",
+    "url": "http://geo.alfredochaves.es.gov.br",
     "brasao": "http://geo.alfredochaves.es.gov.br/rest/coleta/logo/160"
   },
   {
       "municipio": "Arapongas",
-      "url": "https://geo.arapongas.pr.gov.br/changelog.html",
+      "url": "https://geo.arapongas.pr.gov.br",
       "brasao": "https://geo.arapongas.pr.gov.br/rest/coleta/logo/166"
   },
   {
       "municipio": "Balneário Camboriú",
-      "url": "https://geo.bc.sc.gov.br/changelog.html",
+      "url": "https://geo.bc.sc.gov.br",
       "brasao": "https://geo.bc.sc.gov.br/rest/coleta/logo/151"
   },
   {
       "municipio": "Biguaçu",
-      "url": "http://geo.bigua.sc.gov.br/changelog.html",
+      "url": "http://geo.bigua.sc.gov.br",
       "brasao": "http://geo.bigua.sc.gov.br/rest/coleta/logo/161"
   },
   {
       "municipio": "Camaçari",
-      "url": "http://geomais.camacari.ba.gov.br/changelog.html",
+      "url": "http://geomais.camacari.ba.gov.br",
       "brasao": "http://geomais.camacari.ba.gov.br/rest/coleta/logo/127"
   },
   {
       "municipio": "Ibirama",
-      "url": "http://geo.ibirama.sc.gov.br:8082/changelog.html",
+      "url": "http://geo.ibirama.sc.gov.br:8082",
       "brasao": "http://geo.ibirama.sc.gov.br:8082/rest/coleta/logo/126"
   },
   {
       "municipio": "Itapema",
-      "url": "http://geo.itapema.sc.gov.br:8091/changelog.html",
+      "url": "http://geo.itapema.sc.gov.br:8091",
       "brasao": "http://geo.itapema.sc.gov.br:8091/rest/coleta/logo/135" 
   },
   {
       "municipio": "Jacareí",
-      "url": "http://162.214.203.123:8081/changelog.html",
+      "url": "http://162.214.203.123:8081",
       "brasao": "http://162.214.203.123:8081/rest/coleta/logo/7"
   },
   {
     "municipio": "Jaraguá do Sul",
-    "url": "http://177.33.186.184:8080/changelog.html",
+    "url": "http://177.33.186.184:8080",
     "brasao": "http://177.33.186.184:8080/rest/coleta/logo/181"
   },
   {
       "municipio": "Navegantes",
-      "url": "http://geo.navegantes.sc.gov.br/changelog.html",
+      "url": "http://geo.navegantes.sc.gov.br",
       "brasao": "http://geo.navegantes.sc.gov.br/rest/coleta/logo/110"
   },
   {
       "municipio": "Nova Venécia",
-      "url": "http://201.59.100.253:3080/changelog.html",
+      "url": "http://201.59.100.253:3080",
       "brasao": "http://201.59.100.253:3080/rest/coleta/logo/161"
   },
   {
     "municipio": "ParanaCidade",
-    "url": "http://geo.paranacidade.pr.gov.br/changelog.html",
+    "url": "http://geo.paranacidade.pr.gov.br",
     "brasao": "http://geo.paranacidade.pr.gov.br/rest/coleta/logo/300"
   },
   {
       "municipio": "Santo Ângelo",
-      "url": "http://177.85.24.243:25480/changelog.html",
+      "url": "http://177.85.24.243:25480",
       "brasao": "http://177.85.24.243:25480/rest/coleta/logo/119"
   },
   {
       "municipio": "Timbó",
-      "url": "https://geo.timbo.sc.gov.br/changelog.html",
+      "url": "https://geo.timbo.sc.gov.br",
       "brasao": "https://geo.timbo.sc.gov.br/rest/coleta/logo/96"
   },
   {
       "municipio": "Umuarama",
-      "url": "http://187.87.208.107:3390/changelog.html",
+      "url": "http://187.87.208.107:3390",
       "brasao": "http://187.87.208.107:3390/rest/coleta/logo/156"
   }
 ]
