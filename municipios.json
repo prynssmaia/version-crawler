@@ -20,6 +20,11 @@
       "brasao": "http://geo.bigua.sc.gov.br/rest/coleta/logo/161"
   },
   {
+      "municipio": "Bombinhas",
+      "url": "http://geo.bombinhas.sc.gov.br:8080",
+      "brasao": "http://geo.bombinhas.sc.gov.br:8080/rest/coleta/logo/13"
+  },
+  {
       "municipio": "Camaçari",
       "url": "http://geomais.camacari.ba.gov.br",
       "brasao": "http://geomais.camacari.ba.gov.br/rest/coleta/logo/127"
